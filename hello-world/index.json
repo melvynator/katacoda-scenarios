@@ -7,6 +7,10 @@
     "steps": [{
       "title": "Step 1 - Creating a cloud instance",
       "text": "step1.md"
+    },
+    {
+      "title": "Step 2 - Ingesting Logs",
+      "text": "step2.md"
     }],
     "intro": {
       "text": "intro.md",
