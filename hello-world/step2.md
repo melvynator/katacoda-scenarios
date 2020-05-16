@@ -11,5 +11,4 @@ cd filebeat-7.7.0-linux-x86_64/
 `{{execute}}
 
 2. Enable the module **NGINX**:
-
 `./filebeat modules enable nginx`{{execute}}
