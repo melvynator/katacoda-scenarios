@@ -3,13 +3,13 @@ In this step, you will learn how to download Filebeat and configure it for a web
 
 ## Let's try it out!
 
-.1 Download Filebeat:
+1. Download Filebeat:
 `
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.7.0-darwin-x86_64.tar.gz
 tar xzvf filebeat-7.7.0-darwin-x86_64.tar.gz
 cd filebeat-7.7.0-darwin-x86_64/
 `{{execute}}
 
-.2 Enable the module **NGINX**:
+2. Enable the module **NGINX**:
 
 `./filebeat modules enable nginx`{{execute}}
