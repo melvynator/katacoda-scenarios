@@ -21,5 +21,8 @@ cloud.auth: "elastic:<password>"
 `{{copy}}
 Where `<password>` is the password of the `elastic` user.
 
+5. Setup the dashboards and visualizations:
+`./filebeat setup`{{execute}}
+
 4. Now you can start collecting the logs by starting filebeat:
 `./filebeat -e`{{execute}}
