@@ -21,8 +21,8 @@
     },
     "assets": {
        "host01": [
-          {"file": "access.log", "target": "/usr/local/var/log/nginx", "chmod": "+x"},
-          {"file": "error.log", "target": "/usr/local/var/log/nginx", "chmod": "+x"}
+          {"file": "access.log", "target": "/var/log/nginx/", "chmod": "+x"},
+          {"file": "error.log", "target": "/var/log/nginx/", "chmod": "+x"}
       ]
     }
   },
