@@ -16,7 +16,10 @@ cd filebeat-7.7.0-linux-x86_64/
 
 3. Modify `/root/filebeat-7.7.0-linux-x86_64/filebeat.yml`{{open}} to set the connection information for Elastic Cloud:
 `
-cloud.id: "test:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5MjE3ODUwMjAzNjY0NmJmYjQ0NTQ0MDM4ZDllYjQ0YyRlODA5MmIwODVlNzM0ZjVmYWZjY2FmYjFkYTgyNzExNg=="
+cloud.id: "test:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5MjE3ODUwMjAzNjY0NmJmYjQ0NTQ0MDM4ZDllYjQ0YyRlODA5MmIwODVlNzM0ZjVmYWZjY2FmYjFkYTgyNzExNg=="≈
 cloud.auth: "elastic:<password>"
-`
+`{{copy}}
 Where `<password>` is the password of the `elastic` user.
+
+4. Now you can start collecting the logs by starting filebeat:
+`./filebeat -e`{{execute}}
