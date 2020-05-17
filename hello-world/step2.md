@@ -5,6 +5,7 @@ In this step, you will learn how to download Filebeat and configure it for a web
 
 1. Download Filebeat:
 `
+cd /root/
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.7.0-linux-x86_64.tar.gz
 tar xzvf filebeat-7.7.0-linux-x86_64.tar.gz
 cd filebeat-7.7.0-linux-x86_64/
@@ -13,7 +14,7 @@ cd filebeat-7.7.0-linux-x86_64/
 2. Enable the module **NGINX**:
 `./filebeat modules enable nginx`{{execute}}
 
-3. Modify `/home/scrapbook/tutorial/filebeat-7.7.0-linux-x86_64/filebeat.yml`{{open}} to set the connection information for Elastic Cloud:
+3. Modify `filebeat-7.7.0-linux-x86_64/filebeat.yml`{{open}} to set the connection information for Elastic Cloud:
 `
 cloud.id: "test:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5MjE3ODUwMjAzNjY0NmJmYjQ0NTQ0MDM4ZDllYjQ0YyRlODA5MmIwODVlNzM0ZjVmYWZjY2FmYjFkYTgyNzExNg=="
 cloud.auth: "elastic:<password>"
