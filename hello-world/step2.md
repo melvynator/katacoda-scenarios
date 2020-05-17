@@ -13,9 +13,9 @@ cd filebeat-7.7.0-linux-x86_64/
 2. Enable the module **NGINX**:
 `./filebeat modules enable nginx`{{execute}}
 
-3. Modify `filebeat.yml` to set the connection information for Elastic Cloud:
+3. Modify `filebeat.yml`{{open}} to set the connection information for Elastic Cloud:
 `
 cloud.id: "test:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5MjE3ODUwMjAzNjY0NmJmYjQ0NTQ0MDM4ZDllYjQ0YyRlODA5MmIwODVlNzM0ZjVmYWZjY2FmYjFkYTgyNzExNg=="
 cloud.auth: "elastic:<password>"
 `
-Where `<password>` is the password of the elastic user.
+Where `<password>` is the password of the `elastic` user.
