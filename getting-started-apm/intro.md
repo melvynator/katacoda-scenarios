@@ -1,0 +1,1 @@
+In this quick start series, you will learn what Application Performance Monitoring (APM) is, how to visualize APM data through Kibana, how to create a deployment in the Elastic Cloud for APM purposes, and how to configure a demo application to collect and send APM data to your deployment.
