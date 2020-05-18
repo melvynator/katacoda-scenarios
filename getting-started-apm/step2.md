@@ -6,26 +6,18 @@ In this step, you will learn how to create a deployment in the Elastic Cloud for
 
 You can load the Jenkins' dashboard via the following URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
 
-1. Download Filebeat:
+1. Download the JAR:
+`wget -O elastic-apm-agent-1.16.0.jar https://search.maven.org/remotecontent?filepath=co/elastic/apm/elastic-apm-agent/1.16.0/elastic-apm-agent-1.16.0.jar`{{execute}}
+
+2. Download the app using git:
+`git clone https://github.com/elastic/opbeans-java`{{execute}}
+
+3. Create the build:
 `
-cd /root/
-curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.7.0-linux-x86_64.tar.gz
-tar xzvf filebeat-7.7.0-linux-x86_64.tar.gz
-cd filebeat-7.7.0-linux-x86_64/
+cd opbeans-java/opbeans/
+mvn package
 `{{execute}}
 
-2. Enable the module **NGINX**:
-`./filebeat modules enable nginx`{{execute}}
+4. Start the agent
+`java -javaagent:elastic-apm-agent-1.16.0.jar -Delastic.apm.service_name=opbeans-java -Delastic.apm.server_urls=https://5d685bf6d4d3494d8afae70f85eb7a93.apm.europe-west1.gcp.cloud.es.io:443 -Delastic.apm.secret_token=fNHQlOr0Z7uZPgZ3N8 -jar my-application.jar`{{copy}}
 
-3. Modify `/root/filebeat-7.7.0-linux-x86_64/filebeat.yml`{{open}} to set the connection information for Elastic Cloud:
-`
-cloud.id: "test:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5MjE3ODUwMjAzNjY0NmJmYjQ0NTQ0MDM4ZDllYjQ0YyRlODA5MmIwODVlNzM0ZjVmYWZjY2FmYjFkYTgyNzExNg=="
-cloud.auth: "elastic:<password>"
-`{{copy}}
-Where `<password>` is the password of the `elastic` user.
-
-5. Setup the dashboards and visualizations:
-`./filebeat setup`{{execute}}
-
-4. Now you can start collecting the logs by starting filebeat:
-`./filebeat -e`{{execute}}
