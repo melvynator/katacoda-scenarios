@@ -1,8 +1,10 @@
-In this step, you will take a quick tour of what Elastic App Search looks like.
+In this step, you will learn how to create a deployment in the Elastic Cloud for APM purposes as well as how to configure a demo application to collect and send APM data to your deployment.
 
 <iframe style="width: 700px;height: 400px;" src="https://www.youtube.com/embed/a4_o9QetfWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Let's try it out!
+
+You can load the Jenkins' dashboard via the following URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
 
 1. Download Filebeat:
 `
