@@ -1,20 +1,20 @@
 {
   "title": "Getting Started With APM",
-  "description": "Getting started with APM",
+  "description": "In this quick start series, you will learn what Application Performance Monitoring (APM) is, how to visualize APM data through Kibana, how to create a deployment in the Elastic Cloud for APM purposes, and how to configure a demo application to collect and send APM data to your deployment.",
   "difficulty": "Beginner",
   "time": "15 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "What is APM?",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Ingesting APM Data",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Quick tour of APM",
         "text": "step3.md"
       }
     ],
