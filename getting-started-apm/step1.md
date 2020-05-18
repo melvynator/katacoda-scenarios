@@ -1,4 +1,4 @@
-In this step, you will learn what is Application Performance Monitoring and its importance in the context of a unified observability implementation.
+In this step, you will learn what is Application Performance Monitoring and its importance in the context of a unified observability implementation and you will.
 
 <iframe style="width: 700px;height: 400px;" src="https://www.youtube.com/embed/BBGEG21CGo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
