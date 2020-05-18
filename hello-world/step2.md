@@ -18,5 +18,11 @@ cd filebeat-7.7.0-linux-x86_64/
 `
 cloud.id: "test:ZXVyb3BlLXdlc3QxLmdjcC5jbG91ZC5lcy5pbyQ5MjE3ODUwMjAzNjY0NmJmYjQ0NTQ0MDM4ZDllYjQ0YyRlODA5MmIwODVlNzM0ZjVmYWZjY2FmYjFkYTgyNzExNg=="
 cloud.auth: "elastic:<password>"
-`
+`{{copy}}
 Where `<password>` is the password of the `elastic` user.
+
+5. Setup the dashboards and visualizations:
+`./filebeat setup`{{execute}}
+
+4. Now you can start collecting the logs by starting filebeat:
+`./filebeat -e`{{execute}}

@@ -1,8 +1,8 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
+  "title": "Getting Started With Logging",
+  "description": "In this quick start, you will learn how to ingest, view and analyze custom logs from your applications using the Elasticsearch Service.",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Creating a cloud instance",
@@ -11,6 +11,10 @@
     {
       "title": "Step 2 - Ingesting Logs",
       "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Ingesting Custom Logs",
+      "text": "step3.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -21,8 +25,8 @@
     },
     "assets": {
        "host01": [
-          {"file": "access.log", "target": "/usr/local/var/log/nginx", "chmod": "+x"},
-          {"file": "error.log", "target": "/usr/local/var/log/nginx", "chmod": "+x"}
+          {"file": "access.log", "target": "/var/log/nginx/", "chmod": "+x"},
+          {"file": "error.log", "target": "/var/log/nginx/", "chmod": "+x"}
       ]
     }
   },
