@@ -20,5 +20,9 @@ mvn package
 
 
 6. Start the agent
-`java -javaagent:elastic-apm-agent-1.16.0.jar -Delastic.apm.service_name=opbeans-java -Delastic.apm.server_urls=https://5d685bf6d4d3494d8afae70f85eb7a93.apm.europe-west1.gcp.cloud.es.io:443 -Delastic.apm.secret_token=fNHQlOr0Z7uZPgZ3N8 -jar ./target/opbeans-0.0.1-SNAPSHOT.jar`{{copy}}
+`java -javaagent:elastic-apm-agent-1.16.0.jar \
+-Delastic.apm.service_name=opbeans-java \
+-Delastic.apm.server_urls=https://5d685bf6d4d3494d8afae70f85eb7a93.apm.europe-west1.gcp.cloud.es.io:443 \
+-Delastic.apm.secret_token=fNHQlOr0Z7uZPgZ3N8 \
+-jar ./target/opbeans-0.0.1-SNAPSHOT.jar`{{copy}}
 
