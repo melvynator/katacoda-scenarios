@@ -13,12 +13,12 @@ cd opbeans-java/opbeans/
 mvn package
 `{{execute}}
 
-4. You can load the app via the following URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
-
-5. Download the JAR:
+3. Download the JAR:
 `wget -O elastic-apm-agent-1.16.0.jar https://search.maven.org/remotecontent?filepath=co/elastic/apm/elastic-apm-agent/1.16.0/elastic-apm-agent-1.16.0.jar`{{execute}}
 
 
-6. Start the agent
+4. Start the agent
 `java -javaagent:elastic-apm-agent-1.16.0.jar -Delastic.apm.service_name=opbeans-java -Delastic.apm.server_urls=<CLUSTER-URL> -Delastic.apm.secret_token=<PASSWORD> -jar ./target/opbeans-0.0.1-SNAPSHOT.jar`{{copy}}
 
+
+5. You can load the app via the following URL https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/
