@@ -1,17 +1,6 @@
 In this step, you will learn how logging is a key part of observability and how you can use the Elasticsearch Service to solve all of your observability use cases. You’ll see how to  break down a log event, create a new cloud deployment, ingest some sample log data, and view that data using Kibana.
 
-<!-- The script tag should live in the head of your page if at all possible -->
-<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
-
-<!-- Put this wherever you would like your player to appear -->
-<img
-  style="width: 100%; margin: auto; display: block;"
-  class="vidyard-player-embed"
-  src="https://play.vidyard.com/JiahwNxCoWmkyW8M5bGCfa.jpg"
-  data-uuid="JiahwNxCoWmkyW8M5bGCfa"
-  data-v="4"
-  data-type="inline"
-/>
+<iframe class="vidyard_iframe" src="https://play.vidyard.com/PvN1WWR7daEpQ1MPRGvUft.html" width="80%" height="80%" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
 
 ## Let's try it out!
 
