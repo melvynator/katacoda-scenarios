@@ -3,6 +3,7 @@ Let's now download the small application and have it up and running.
 1. Download the application:
 `
 git clone https://github.com/melvynator/simple-django-app.git
+cd simple-django-app/
 `{{execute}}
 
 2. Let's create a virtual environment and then activate it:
