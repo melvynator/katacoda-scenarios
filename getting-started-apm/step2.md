@@ -1,7 +1,5 @@
 In this step, you will learn how to create a deployment in the Elastic Cloud for APM purposes as well as how to configure a demo application to collect and send APM data to your deployment.
 
-<iframe style="width: 700px;height: 400px;" src="https://play.vidyard.com/xEfFutP5HqjVHtuxYSwE4c.html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Let's try it out!
 
 1. Download the app using git:
