@@ -1,0 +1,9 @@
+2020/04/02 16:45:24 [notice] 1966#0: signal process started
+2020/04/02 22:41:40 [notice] 5939#0: signal process started
+2020/04/04 15:26:34 [notice] 20480#0: signal process started
+2020/04/13 12:13:36 [notice] 67269#0: signal process started
+2020/04/13 13:09:03 [emerg] 67796#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2020/04/13 13:09:03 [emerg] 67796#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2020/04/13 13:09:03 [emerg] 67796#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2020/04/13 13:09:03 [emerg] 67796#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
+2020/04/13 13:09:03 [emerg] 67796#0: bind() to 0.0.0.0:8080 failed (48: Address already in use)
